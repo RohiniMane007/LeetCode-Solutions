@@ -1,24 +1,22 @@
 // import "dart:math";
 void main() {
   Solution s = Solution();
-  String str = s.findTheDifference("abcd", "abcde");
+  String str = s.findTheDifference("a", "aa");
 
   print(str);
 }
 
 class Solution {
   String findTheDifference(String s, String t) {
-//      int maxLen = max(s.length,t.length);
-//      print(maxLen);
-
-    List<String> str = s.split('');
-
     for (int i = 0; i < s.length; i++) {
-      if (t.contains(s[i])) {
-        t.replaceAll(s[i], '');
+      // if (t.contains(s[i])) {
+      //   t = t.replaceAll(s[i], '');
+      // }
+      if (s[i] == t[i]) {
+        // t = t.replaceFirstMapped(t[i],t, i);
       }
     }
-    print(str);
+    print(t);
     return "";
   }
 }
