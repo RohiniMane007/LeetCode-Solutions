@@ -11,7 +11,13 @@ class Solution {
 //      int maxLen = max(s.length,t.length);
 //      print(maxLen);
 
-    var str = s.split('');
+    List<String> str = s.split('');
+
+    for (int i = 0; i < s.length; i++) {
+      if (t.contains(s[i])) {
+        t.replaceAll(s[i], '');
+      }
+    }
     print(str);
     return "";
   }
