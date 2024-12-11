@@ -1,4 +1,3 @@
-// import "dart:math";
 void main() {
   Solution s = Solution();
   String str = s.findTheDifference("abcd", "abcde");
