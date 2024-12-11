@@ -7,7 +7,7 @@ void main() {
 
 class Solution {
   String reverseVowels(String s) {
-    String vowel = "aeiouAEIOU";
+    /* String vowel = "aeiouAEIOU";
     List<String> olist = s.split('');
     List<String> revlist =
         s.split('').reversed.where((e) => vowel.contains(e)).toList();
@@ -19,6 +19,13 @@ class Solution {
         y++;
       }
     }
-    return olist.join('');
+    return olist.join('');*/
+
+    String vowel = "aeiouAEIOU";
+    List<String> olist = s.split('');
+    List<String> revlist = s.split('').reversed.toList();
+
+//swap using temp
+    return "";
   }
 }
