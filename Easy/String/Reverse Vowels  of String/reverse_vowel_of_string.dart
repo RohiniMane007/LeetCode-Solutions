@@ -25,7 +25,17 @@ class Solution {
     List<String> olist = s.split('');
     List<String> revlist = s.split('').reversed.toList();
 
-//swap using temp
-    return "";
+    for (int i = 0; i < s.length; i++) {
+      if (vowel.contains(olist[i])) {
+        for (int j = i; j < revlist.length; j++) {
+          if (vowel.contains(revlist[j])) {
+            olist[i] = revlist[j];
+            break;
+          }
+        }
+      }
+    }
+
+    return olist.join('');
   }
 }
