@@ -20,5 +20,9 @@ class Solution {
       }
     }
     return olist.join('');
+
+    // List<String> slist = s.split('');
+    // int i = 0;
+    // return "";
   }
 }
