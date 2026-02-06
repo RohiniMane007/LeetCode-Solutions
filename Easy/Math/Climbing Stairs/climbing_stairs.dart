@@ -1,7 +1,7 @@
 void main() {
- int num= 4;
+  int num= 4;
   Solution s = Solution();
- int res = s.climbStairs(num);
+  int res = s.climbStairs(num);
   print(res);
 }
 
